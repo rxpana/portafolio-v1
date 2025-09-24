@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab - Creative Experiments Hub | Neon Portfolio - 3D Web Development Innovation</title>
+    <meta name="description" content="Explore cutting-edge WebGL experiments, Three.js tutorials, and interactive 3D web development resources. Learn from industry-leading code snippets and performance optimization techniques." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fneonportf9496back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary overflow-x-hidden">
+    <!-- Floating Navigation -->
+    <nav id="floating-nav" class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-surface/80 backdrop-blur-lg border border-border rounded-2xl px-8 py-4 transition-all duration-300 ease-out">
+        <div class="flex items-center space-x-8">
+            <a href="homepage_premium_digital_portfolio.html" class="text-secondary font-bold text-xl neon-glow-orange">rxpana</a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="portfolio_interactive_project_showcase.html" class="text-text-secondary hover:text-secondary transition-colors duration-300">Portfolio</a>
+                <a href="about_digital_craftsperson_story.html" class="text-text-secondary hover:text-secondary transition-colors duration-300">Sobre mi</a>
+                <!-- <a href="lab_creative_experiments_hub.html" class="text-text-secondary hover:text-secondary transition-colors duration-300">Lab</a> -->
+                <a href="contact_multi_touch_engagement_hub.html" class="text-text-secondary hover:text-secondary transition-colors duration-300">Contacto</a>
+            </div>
+            <a href="contact_multi_touch_engagement_hub.html" class="btn-primary text-sm">Start Project</a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="fixed top-6 right-6 z-50 md:hidden bg-surface border border-border rounded-lg p-3 hover:border-secondary transition-colors duration-300">
+        <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+    </button>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-background/95 backdrop-blur-lg hidden">
+        <div class="flex flex-col items-center justify-center h-full space-y-8">
+            <a href="portfolio_interactive_project_showcase.html" class="text-2xl text-text-secondary hover:text-secondary transition-colors duration-300">Portfolio</a>
+            <a href="about_digital_craftsperson_story.html" class="text-2xl text-text-secondary hover:text-secondary transition-colors duration-300">Sobre mi</a>
+            <!-- <a href="lab_creative_experiments_hub.html" class="text-2xl text-text-secondary hover:text-secondary transition-colors duration-300">Lab</a> -->
+            <a href="contact_multi_touch_engagement_hub.html" class="text-2xl text-text-secondary hover:text-secondary transition-colors duration-300">Contacto</a>
+            <a href="contact_multi_touch_engagement_hub.html" class="btn-primary text-lg mt-8">Start Project</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Animated Background Particles -->
+        <div id="particles-container" class="absolute inset-0 z-0">
+            <div class="particle absolute w-2 h-2 bg-secondary rounded-full opacity-60 animate-pulse" style="top: 15%; left: 8%; animation-delay: 0s;"></div>
+            <div class="particle absolute w-1 h-1 bg-accent rounded-full opacity-40 animate-pulse" style="top: 25%; left: 85%; animation-delay: 1s;"></div>
+            <div class="particle absolute w-3 h-3 bg-secondary rounded-full opacity-30 animate-pulse" style="top: 55%; left: 12%; animation-delay: 2s;"></div>
+            <div class="particle absolute w-1 h-1 bg-accent rounded-full opacity-50 animate-pulse" style="top: 75%; left: 75%; animation-delay: 0.5s;"></div>
+            <div class="particle absolute w-2 h-2 bg-secondary rounded-full opacity-40 animate-pulse" style="top: 35%; left: 92%; animation-delay: 1.5s;"></div>
+            <div class="particle absolute w-1 h-1 bg-accent rounded-full opacity-60 animate-pulse" style="top: 65%; left: 20%; animation-delay: 2.5s;"></div>
+        </div>
+
+        <!-- Geometric Shapes -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-1/4 left-1/4 w-32 h-32 border border-secondary/20 rounded-lg rotate-45 animate-spin" style="animation-duration: 20s;"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-24 h-24 border border-accent/20 rounded-full animate-pulse"></div>
+            <div class="absolute top-1/2 right-1/3 w-16 h-16 bg-gradient-to-r from-secondary/10 to-accent/10 rotate-12 animate-bounce" style="animation-duration: 3s;"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-6xl mx-auto">
+            <div class="flex items-center justify-center mb-6">
+                <svg class="w-16 h-16 text-secondary mr-4 neon-glow-orange" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                </svg>
+                <h1 class="text-5xl md:text-7xl font-bold text-gradient animate-fade-in">
+                    Creative Lab
+                </h1>
+            </div>
+            <p class="text-xl md:text-2xl text-text-secondary mb-8 max-w-3xl mx-auto animate-slide-up">
+                Explore cutting-edge experiments, interactive tutorials, and innovative 3D web development resources that push the boundaries of digital creativity.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center animate-slide-up" style="animation-delay: 0.3s;">
+                <a href="#experiments" class="btn-primary text-lg px-8 py-4">
+                    Explore Experiments
+                </a>
+                <a href="#tutorials" class="border border-secondary text-secondary hover:bg-secondary hover:text-primary px-8 py-4 rounded-lg transition-all duration-300 hover-lift neon-glow-orange">
+                    View Tutorials
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Interactive Experiments Section -->
+    <section id="experiments" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Interactive Experiments</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Cutting-edge WebGL shaders, particle systems, and Three.js animations you can manipulate and learn from.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Experiment 1 -->
+                <div class="card group cursor-pointer hover-lift">
+                    <div class="relative overflow-hidden rounded-lg mb-6 bg-gradient-to-br from-secondary/20 to-accent/20 h-48 flex items-center justify-center">
+                        <div class="w-24 h-24 border-4 border-secondary rounded-full animate-spin opacity-60"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-secondary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4 bg-surface/80 px-2 py-1 rounded text-xs text-secondary">WebGL</div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">Particle Gravity System</h3>
+                    <p class="text-text-secondary mb-4">Interactive particle physics with real-time gravity manipulation and collision detection.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-sm text-accent">Three.js</span>
+                            <span class="text-sm text-text-secondary">•</span>
+                            <span class="text-sm text-text-secondary">60 FPS</span>
+                        </div>
+                        <button class="text-secondary hover:text-accent transition-colors duration-300" onclick="copyCode('particle-code')">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="bg-background rounded p-3 text-sm font-mono text-text-secondary overflow-x-auto">
+                        <code id="particle-code">const particles = new THREE.Points(geometry, material);</code>
+                    </div>
+                </div>
+
+                <!-- Experiment 2 -->
+                <div class="card group cursor-pointer hover-lift">
+                    <div class="relative overflow-hidden rounded-lg mb-6 bg-gradient-to-br from-accent/20 to-secondary/20 h-48 flex items-center justify-center">
+                        <div class="w-32 h-32 bg-gradient-to-r from-accent to-secondary rounded-lg transform rotate-45 animate-pulse"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-accent/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4 bg-surface/80 px-2 py-1 rounded text-xs text-accent">Shader</div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">Morphing Geometry</h3>
+                    <p class="text-text-secondary mb-4">Real-time vertex manipulation with custom GLSL shaders and smooth transitions.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-sm text-accent">GLSL</span>
+                            <span class="text-sm text-text-secondary">•</span>
+                            <span class="text-sm text-text-secondary">GPU Optimized</span>
+                        </div>
+                        <button class="text-secondary hover:text-accent transition-colors duration-300" onclick="copyCode('shader-code')">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="bg-background rounded p-3 text-sm font-mono text-text-secondary overflow-x-auto">
+                        <code id="shader-code">uniform float time; varying vec3 vPosition;</code>
+                    </div>
+                </div>
+
+                <!-- Experiment 3 -->
+                <div class="card group cursor-pointer hover-lift">
+                    <div class="relative overflow-hidden rounded-lg mb-6 bg-gradient-to-br from-secondary/20 to-accent/20 h-48 flex items-center justify-center">
+                        <div class="grid grid-cols-3 gap-2">
+                            <div class="w-8 h-8 bg-secondary rounded animate-bounce" style="animation-delay: 0s;"></div>
+                            <div class="w-8 h-8 bg-accent rounded animate-bounce" style="animation-delay: 0.2s;"></div>
+                            <div class="w-8 h-8 bg-secondary rounded animate-bounce" style="animation-delay: 0.4s;"></div>
+                            <div class="w-8 h-8 bg-accent rounded animate-bounce" style="animation-delay: 0.6s;"></div>
+                            <div class="w-8 h-8 bg-secondary rounded animate-bounce" style="animation-delay: 0.8s;"></div>
+                            <div class="w-8 h-8 bg-accent rounded animate-bounce" style="animation-delay: 1s;"></div>
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-secondary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 right-4 bg-surface/80 px-2 py-1 rounded text-xs text-secondary">CSS</div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">CSS Grid Animations</h3>
+                    <p class="text-text-secondary mb-4">Advanced CSS animations with grid layouts and custom timing functions.</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center space-x-2">
+                            <span class="text-sm text-accent">CSS3</span>
+                            <span class="text-sm text-text-secondary">•</span>
+                            <span class="text-sm text-text-secondary">Pure CSS</span>
+                        </div>
+                        <button class="text-secondary hover:text-accent transition-colors duration-300" onclick="copyCode('css-code')">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="bg-background rounded p-3 text-sm font-mono text-text-secondary overflow-x-auto">
+                        <code id="css-code">@keyframes gridBounce { 0% { transform: scale(1); } }</code>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="javascript:void(0)" class="btn-primary text-lg px-8 py-4">
+                    View All Experiments
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorials Section -->
+    <section id="tutorials" class="py-20 px-6 bg-surface/30">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Step-by-Step Tutorials</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Comprehensive guides for creating 3D web effects, optimizing performance, and implementing modern techniques.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Tutorial 1 -->
+                <div class="card group hover-lift">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-2xl flex items-center justify-center neon-glow-orange">
+                            <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-secondary transition-colors duration-300">Building Your First 3D Scene</h3>
+                            <p class="text-text-secondary mb-4">Learn Three.js fundamentals with camera setup, lighting, and basic geometry creation.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4">
+                                    <span class="text-sm text-accent">45 min read</span>
+                                    <span class="text-sm text-text-secondary">Beginner</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-text-secondary">2.4k views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tutorial 2 -->
+                <div class="card group hover-lift">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-accent to-secondary rounded-2xl flex items-center justify-center neon-glow-violet">
+                            <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-secondary transition-colors duration-300">WebGL Performance Optimization</h3>
+                            <p class="text-text-secondary mb-4">Advanced techniques for maintaining 60fps with complex 3D scenes and animations.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4">
+                                    <span class="text-sm text-accent">60 min read</span>
+                                    <span class="text-sm text-text-secondary">Advanced</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-text-secondary">1.8k views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tutorial 3 -->
+                <div class="card group hover-lift">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-secondary to-accent rounded-2xl flex items-center justify-center neon-glow-orange">
+                            <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-secondary transition-colors duration-300">Custom Shader Development</h3>
+                            <p class="text-text-secondary mb-4">Create stunning visual effects with GLSL vertex and fragment shaders.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4">
+                                    <span class="text-sm text-accent">90 min read</span>
+                                    <span class="text-sm text-text-secondary">Expert</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-text-secondary">3.1k views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tutorial 4 -->
+                <div class="card group hover-lift">
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-16 h-16 bg-gradient-to-r from-accent to-secondary rounded-2xl flex items-center justify-center neon-glow-violet">
+                            <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-semibold mb-2 group-hover:text-secondary transition-colors duration-300">Responsive 3D Design</h3>
+                            <p class="text-text-secondary mb-4">Adapt 3D experiences for mobile devices with touch interactions and performance considerations.</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center space-x-4">
+                                    <span class="text-sm text-accent">35 min read</span>
+                                    <span class="text-sm text-text-secondary">Intermediate</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                        <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <span class="text-sm text-text-secondary">1.5k views</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Downloadable Resources</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Free 3D models, shader code, animation libraries, and design templates to accelerate your projects.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Resource 1 -->
+                <div class="card text-center group hover-lift">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-secondary to-accent rounded-2xl flex items-center justify-center neon-glow-orange">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 group-hover:text-secondary transition-colors duration-300">3D Models Pack</h3>
+                    <p class="text-text-secondary text-sm mb-4">Low-poly models optimized for web performance</p>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-accent">25 Models</span>
+                        <span class="text-text-secondary">2.1k downloads</span>
+                    </div>
+                </div>
+
+                <!-- Resource 2 -->
+                <div class="card text-center group hover-lift">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-accent to-secondary rounded-2xl flex items-center justify-center neon-glow-violet">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 group-hover:text-secondary transition-colors duration-300">Shader Library</h3>
+                    <p class="text-text-secondary text-sm mb-4">GLSL shaders for various visual effects</p>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-accent">15 Shaders</span>
+                        <span class="text-text-secondary">1.8k downloads</span>
+                    </div>
+                </div>
+
+                <!-- Resource 3 -->
+                <div class="card text-center group hover-lift">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-secondary to-accent rounded-2xl flex items-center justify-center neon-glow-orange">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,18.5C15.5,18.5 19.31,16.69 21.5,12C19.31,7.31 15.5,5.5 12,5.5C8.5,5.5 4.69,7.31 2.5,12C4.69,16.69 8.5,18.5 12,18.5M12,17C9.24,17 6.83,15.65 5.29,13.1C5.1,12.74 5,12.37 5,12C5,11.63 5.1,11.26 5.29,10.9C6.83,8.35 9.24,7 12,7C14.76,7 17.17,8.35 18.71,10.9C18.9,11.26 19,11.63 19,12C19,12.37 18.9,12.74 18.71,13.1C17.17,15.65 14.76,17 12,17M12,8.5C10.07,8.5 8.5,10.07 8.5,12C8.5,13.93 10.07,15.5 12,15.5C13.93,15.5 15.5,13.93 15.5,12C15.5,10.07 13.93,8.5 12,8.5M12,14C11.17,14 10.5,13.33 10.5,12.5C10.5,11.67 11.17,11 12,11C12.83,11 13.5,11.67 13.5,12.5C13.5,13.33 12.83,14 12,14Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 group-hover:text-secondary transition-colors duration-300">Animation Kit</h3>
+                    <p class="text-text-secondary text-sm mb-4">Pre-built animations and transitions</p>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-accent">30 Animations</span>
+                        <span class="text-text-secondary">3.2k downloads</span>
+                    </div>
+                </div>
+
+                <!-- Resource 4 -->
+                <div class="card text-center group hover-lift">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-accent to-secondary rounded-2xl flex items-center justify-center neon-glow-violet">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2 group-hover:text-secondary transition-colors duration-300">UI Templates</h3>
+                    <p class="text-text-secondary text-sm mb-4">Modern interface designs with 3D elements</p>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-accent">12 Templates</span>
+                        <span class="text-text-secondary">1.4k downloads</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog & Insights Section -->
+    <section class="py-20 px-6 bg-surface/30">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Latest Insights</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Industry trends, tool reviews, and project retrospectives with interactive elements.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <article class="card group hover-lift">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?q=80&w=2425&auto=format&fit=crop" alt="The Future of 3D Web Development" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 left-4 bg-surface/80 px-2 py-1 rounded text-xs text-secondary">Industry Trends</div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">The Future of 3D Web Development</h3>
+                    <p class="text-text-secondary mb-4">Exploring emerging technologies and their impact on immersive web experiences.</p>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-text-secondary">Dec 15, 2024</span>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">4.2k reads</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="card group hover-lift">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="WebGL Performance Optimization Techniques" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-accent/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 left-4 bg-surface/80 px-2 py-1 rounded text-xs text-accent">Technical Deep Dive</div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">WebGL Performance Optimization</h3>
+                    <p class="text-text-secondary mb-4">Advanced strategies for maintaining smooth 60fps in complex 3D applications.</p>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-text-secondary">Dec 8, 2024</span>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">3.8k reads</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="card group hover-lift">
+                    <div class="relative overflow-hidden rounded-lg mb-6">
+                        <img src="https://images.pixabay.com/photo/2016/11/19/14/00/code-1839406_1280.jpg" alt="Building Interactive 3D Portfolios" class="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute top-4 left-4 bg-surface/80 px-2 py-1 rounded text-xs text-secondary">Case Study</div>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 group-hover:text-secondary transition-colors duration-300">Building Interactive 3D Portfolios</h3>
+                    <p class="text-text-secondary mb-4">A comprehensive guide to creating engaging portfolio experiences with Three.js.</p>
+                    <div class="flex items-center justify-between text-sm">
+                        <span class="text-text-secondary">Nov 28, 2024</span>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                            </svg>
+                            <span class="text-text-secondary">5.1k reads</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Stay Updated</h2>
+            <p class="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
+                Get exclusive tutorials, early access to experiments, and insights into cutting-edge 3D web development techniques.
+            </p>
+            <div class="max-w-md mx-auto">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Enter your email" class="input-field flex-1" />
+                    <button class="btn-primary px-8 py-3">
+                        Subscribe
+                    </button>
+                </div>
+                <p class="text-sm text-text-secondary mt-4">
+                    Join 2,500+ developers. No spam, unsubscribe anytime.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-border">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <span class="text-2xl font-bold text-secondary neon-glow-orange">NEON</span>
+                        <span class="ml-2 text-text-secondary">Portfolio</span>
+                    </div>
+                    <p class="text-text-secondary mb-6 max-w-md">
+                        Illuminating Digital Possibilities through cutting-edge 3D web experiences and premium digital solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-secondary transition-colors duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-secondary transition-colors duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-secondary transition-colors duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li><a href="homepage_premium_digital_portfolio.html" class="hover:text-secondary transition-colors duration-300">Home</a></li>
+                        <li><a href="portfolio_interactive_project_showcase.html" class="hover:text-secondary transition-colors duration-300">Portfolio</a></li>
+                        <li><a href="about_digital_craftsperson_story.html" class="hover:text-secondary transition-colors duration-300">About</a></li>
+                        <li><a href="lab_creative_experiments_hub.html" class="hover:text-secondary transition-colors duration-300">Lab</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors duration-300">Experiments</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors duration-300">Tutorials</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors duration-300">Downloads</a></li>
+                        <li><a href="contact_multi_touch_engagement_hub.html" class="hover:text-secondary transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-border mt-8 pt-8 text-center text-text-secondary">
+                <p>&copy; 2025 Neon Portfolio. All Rights Reserved. Crafted with passion for digital excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on links
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Floating navigation scroll effect
+        const floatingNav = document.getElementById('floating-nav');
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > 100) {
+                floatingNav.classList.add('bg-surface/95');
+                floatingNav.classList.add('shadow-neon-orange');
+            } else {
+                floatingNav.classList.remove('bg-surface/95');
+                floatingNav.classList.remove('shadow-neon-orange');
+            }
+            
+            lastScrollY = currentScrollY;
+        });
+
+        // Particle animation on mouse move
+        document.addEventListener('mousemove', (e) => {
+            const particles = document.querySelectorAll('.particle');
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+            
+            particles.forEach((particle, index) => {
+                const speed = (index + 1) * 0.01;
+                const x = (mouseX * speed) % window.innerWidth;
+                const y = (mouseY * speed) % window.innerHeight;
+                
+                particle.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
+            });
+        });
+
+        // Copy code functionality
+        function copyCode(elementId) {
+            const codeElement = document.getElementById(elementId);
+            const text = codeElement.textContent;
+            
+            navigator.clipboard.writeText(text).then(() => {
+                // Show feedback
+                const button = event.target.closest('button');
+                const originalHTML = button.innerHTML;
+                button.innerHTML = '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>';
+                button.classList.add('text-success');
+                
+                setTimeout(() => {
+                    button.innerHTML = originalHTML;
+                    button.classList.remove('text-success');
+                }, 2000);
+            }).catch(() => {
+                console.log('Copy failed');
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Newsletter form handling
+        const newsletterForm = document.querySelector('input[type="email"]').closest('div');
+        const emailInput = newsletterForm.querySelector('input[type="email"]');
+        const subscribeBtn = newsletterForm.querySelector('button');
+
+        subscribeBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const email = emailInput.value.trim();
+            
+            if (email && email.includes('@')) {
+                // Simulate subscription
+                subscribeBtn.textContent = 'Subscribed!';
+                subscribeBtn.classList.add('bg-success');
+                emailInput.value = '';
+                
+                setTimeout(() => {
+                    subscribeBtn.textContent = 'Subscribe';
+                    subscribeBtn.classList.remove('bg-success');
+                }, 3000);
+            } else {
+                emailInput.classList.add('border-error');
+                setTimeout(() => {
+                    emailInput.classList.remove('border-error');
+                }, 2000);
+            }
+        });
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

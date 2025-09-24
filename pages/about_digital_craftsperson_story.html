@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre mí - Piensa Diferente | rxpana Portfolio</title>
+    <meta name="description" content="Descubre el viaje desde el desarrollo tradicional hasta la innovación web 3D. Conoce la filosofía detrás de 'Iluminando Posibilidades Digitales' y el proceso creativo que transforma visiones en experiencias digitales extraordinarias." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fneonportf9496back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary overflow-x-hidden">
+    <!-- Floating Navigation -->
+    <nav id="floating-nav" class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 bg-surface/80 backdrop-blur-lg border border-border rounded-2xl px-8 py-4 transition-all duration-300 ease-out">
+        <div class="flex items-center space-x-8">
+            <a href="homepage_premium_digital_portfolio.html" class="text-secondary font-bold text-xl neon-glow-orange">rxpana</a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="portfolio_interactive_project_showcase.html" class="text-text-secondary hover:text-secondary transition-colors duration-300">Portafolio</a>
+                <a href="about_digital_craftsperson_story.html" class="text-secondary font-medium transition-colors duration-300">Sobre mí</a>
+                <!-- <a href="lab_creative_experiments_hub.html" class="text-text-secondary hover:text-secondary transition-colors duration-300">Laboratorio</a> -->
+                <a href="contact_multi_touch_engagement_hub.html" class="text-text-secondary hover:text-secondary transition-colors duration-300">Contacto</a>
+            </div>
+            <a href="contact_multi_touch_engagement_hub.html" class="btn-primary text-sm">Iniciar Proyecto</a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-btn" class="fixed top-6 right-6 z-50 md:hidden bg-surface border border-border rounded-lg p-3 hover:border-secondary transition-colors duration-300">
+        <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+    </button>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-background/95 backdrop-blur-lg hidden">
+        <div class="flex flex-col items-center justify-center h-full space-y-8">
+            <a href="portfolio_interactive_project_showcase.html" class="text-2xl text-text-secondary hover:text-secondary transition-colors duration-300">Portafolio</a>
+            <a href="about_digital_craftsperson_story.html" class="text-2xl text-secondary font-medium">Sobre mí</a>
+            <!-- <a href="lab_creative_experiments_hub.html" class="text-2xl text-text-secondary hover:text-secondary transition-colors duration-300">Laboratorio</a> -->
+            <a href="contact_multi_touch_engagement_hub.html" class="text-2xl text-text-secondary hover:text-secondary transition-colors duration-300">Contacto</a>
+            <a href="contact_multi_touch_engagement_hub.html" class="btn-primary text-lg mt-8">Iniciar Proyecto</a>
+        </div>
+    </div>
+
+    <!-- Personal Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <!-- Animated Background Elements -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-1/4 left-1/4 w-32 h-32 border border-secondary/20 rounded-lg rotate-45 animate-spin" style="animation-duration: 20s;"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-24 h-24 border border-accent/20 rounded-full animate-pulse"></div>
+            <div class="absolute top-1/2 right-1/3 w-16 h-16 bg-gradient-to-r from-secondary/10 to-accent/10 rotate-12 animate-bounce" style="animation-duration: 3s;"></div>
+        </div>
+
+        <!-- 3D Avatar Representation -->
+        <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-0">
+            <div class="w-64 h-64 relative">
+                <div class="absolute inset-0 bg-gradient-to-r from-secondary/20 to-accent/20 rounded-full animate-pulse"></div>
+                <div class="absolute inset-4 bg-gradient-to-r from-accent/30 to-secondary/30 rounded-full animate-pulse" style="animation-delay: 0.5s;"></div>
+                <div class="absolute inset-8 bg-gradient-to-r from-secondary/40 to-accent/40 rounded-full animate-pulse" style="animation-delay: 1s;"></div>
+            </div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-gradient animate-fade-in">
+                Un poco de<br />rxpana studio
+            </h1>
+            <p class="text-xl md:text-2xl text-text-secondary mb-8 max-w-3xl mx-auto animate-slide-up">
+                Donde la artesanía tradicional se encuentra con la tecnología de vanguardia. Descubre el viaje del código al arte, y la filosofía detrás de iluminar posibilidades digitales.
+            </p>
+            <div class="animate-slide-up" style="animation-delay: 0.3s;">
+                <a href="#journey" class="border border-secondary text-secondary hover:bg-secondary hover:text-primary px-8 py-4 rounded-lg transition-all duration-300 hover-lift neon-glow-orange">
+                    Ver Historia
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Journey Section -->
+    <section id="journey" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Mi Trayectoria</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Desde el desarrollo web tradicional hasta las experiencias digitales 3D pioneras - una historia de evolución continua y avance creativo.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="card hover-lift">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-secondary to-accent rounded-lg flex items-center justify-center neon-glow-orange">
+                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Los Fundamentos</h3>
+                                <p class="text-text-secondary">Comencé con desarrollo web tradicional, dominando HTML, CSS y JavaScript. Construí innumerables sitios web, pero siempre sentí que algo faltaba - la chispa de la verdadera innovación.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card hover-lift">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-accent to-secondary rounded-lg flex items-center justify-center neon-glow-violet">
+                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">El Descubrimiento</h3>
+                                <p class="text-text-secondary">Descubrí Three.js y WebGL - de repente la web se convirtió en un lienzo para el arte 3D. Este fue el momento en que todo cambió, abriendo infinitas posibilidades para la narración digital.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card hover-lift">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-gradient-to-r from-secondary to-accent rounded-lg flex items-center justify-center neon-glow-orange">
+                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 11H7v6h2v-6zm4 0h-2v6h2v-6zm4 0h-2v6h2v-6zm2.5-9H19v2h-1.5v17.5c0 .83-.67 1.5-1.5 1.5H8c-.83 0-1.5-.67-1.5-1.5V4H5V2h3.5c0-.83.67-1.5 1.5-1.5h4c.83 0 1.5.67 1.5 1.5H18.5z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">La Evolución</h3>
+                                <p class="text-text-secondary">Evolucioné hacia un artesano digital, combinando maestría técnica con visión artística. Cada proyecto se convirtió en una oportunidad para empujar límites y crear experiencias extraordinarias.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?q=80&w=1806&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Digital craftsperson workspace with multiple monitors showing 3D designs" class="w-full h-96 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent rounded-lg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Skills Matrix -->
+    <section class="py-20 px-6 bg-surface/30">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Habilidades y Experiencia</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Una combinación integral de maestría técnica e innovación creativa, evolucionando constantemente con el panorama digital.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <!-- Technical Skills -->
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-8 text-center">Competencias Técnicas</h3>
+                    <div class="space-y-6">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">JavaScript & TypeScript</span>
+                                <span class="text-secondary">95%</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-gradient-to-r from-secondary to-accent h-2 rounded-full neon-glow-orange" style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Three.js & WebGL</span>
+                                <span class="text-secondary">90%</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-gradient-to-r from-secondary to-accent h-2 rounded-full neon-glow-orange" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">React & Next.js</span>
+                                <span class="text-secondary">92%</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-gradient-to-r from-secondary to-accent h-2 rounded-full neon-glow-orange" style="width: 92%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Node.js & APIs</span>
+                                <span class="text-secondary">88%</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-gradient-to-r from-secondary to-accent h-2 rounded-full neon-glow-orange" style="width: 88%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Performance Optimization</span>
+                                <span class="text-secondary">85%</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-gradient-to-r from-secondary to-accent h-2 rounded-full neon-glow-orange" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Creative Skills -->
+                <div class="card">
+                    <h3 class="text-2xl font-semibold mb-8 text-center">Habilidades Creativas</h3>
+                    <div class="space-y-6">
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">3D Design & Animation</span>
+                                <span class="text-accent">93%</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-gradient-to-r from-accent to-secondary h-2 rounded-full neon-glow-violet" style="width: 93%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">UI/UX Design</span>
+                                <span class="text-accent">89%</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-gradient-to-r from-accent to-secondary h-2 rounded-full neon-glow-violet" style="width: 89%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Brand Strategy</span>
+                                <span class="text-accent">86%</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-gradient-to-r from-accent to-secondary h-2 rounded-full neon-glow-violet" style="width: 86%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Visual Storytelling</span>
+                                <span class="text-accent">91%</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-gradient-to-r from-accent to-secondary h-2 rounded-full neon-glow-violet" style="width: 91%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium">Creative Problem Solving</span>
+                                <span class="text-accent">94%</span>
+                            </div>
+                            <div class="w-full bg-border rounded-full h-2">
+                                <div class="bg-gradient-to-r from-accent to-secondary h-2 rounded-full neon-glow-violet" style="width: 94%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Línea de Tiempo de Experiencia</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Hitos clave y momentos transformadores que dieron forma al viaje del artesano digital.
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-secondary to-accent"></div>
+
+                <!-- Timeline Items -->
+                <div class="space-y-12">
+                    <!-- 2025 -->
+                    <div class="timeline-item flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <div class="card hover-lift">
+                                <h3 class="text-xl font-semibold mb-2">Lanzamiento de Portafolio Digital Premium</h3>
+                                <p class="text-text-secondary mb-2">Lancé una plataforma de portafolio 3D de vanguardia, estableciendo nuevos estándares para la presentación de artesanos digitales.</p>
+                                <span class="text-secondary font-medium">2025</span>
+                            </div>
+                        </div>
+                        <div class="w-4 h-4 bg-secondary rounded-full border-4 border-background z-10 neon-glow-orange"></div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+
+                    <!-- 2024 -->
+                    <div class="timeline-item flex items-center">
+                        <div class="w-1/2 pr-8"></div>
+                        <div class="w-4 h-4 bg-accent rounded-full border-4 border-background z-10 neon-glow-violet"></div>
+                        <div class="w-1/2 pl-8">
+                            <div class="card hover-lift">
+                                <h3 class="text-xl font-semibold mb-2">Avance en Innovación Web 3D</h3>
+                                <p class="text-text-secondary mb-2">Pionero en técnicas WebGL avanzadas, creando experiencias 3D inmersivas que transformaron las métricas de compromiso del cliente en un 300%.</p>
+                                <span class="text-accent font-medium">2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2023 -->
+                    <div class="timeline-item flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <div class="card hover-lift">
+                                <h3 class="text-xl font-semibold mb-2">Asociación con Agencia Creativa</h3>
+                                <p class="text-text-secondary mb-2">Establecí asociaciones estratégicas con agencias creativas premium, entregando experiencias digitales galardonadas.</p>
+                                <span class="text-secondary font-medium">2023</span>
+                            </div>
+                        </div>
+                        <div class="w-4 h-4 bg-secondary rounded-full border-4 border-background z-10 neon-glow-orange"></div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+
+                    <!-- 2022 -->
+                    <div class="timeline-item flex items-center">
+                        <div class="w-1/2 pr-8"></div>
+                        <div class="w-4 h-4 bg-accent rounded-full border-4 border-background z-10 neon-glow-violet"></div>
+                        <div class="w-1/2 pl-8">
+                            <div class="card hover-lift">
+                                <h3 class="text-xl font-semibold mb-2">Identidad de Artesano Digital</h3>
+                                <p class="text-text-secondary mb-2">Evolucioné de desarrollador tradicional a artesano digital, enfocándome en la intersección del arte y la tecnología.</p>
+                                <span class="text-accent font-medium">2022</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2020 -->
+                    <div class="timeline-item flex items-center">
+                        <div class="w-1/2 pr-8 text-right">
+                            <div class="card hover-lift">
+                                <h3 class="text-xl font-semibold mb-2">Años de Fundación</h3>
+                                <p class="text-text-secondary mb-2">Comencé el viaje en desarrollo web, construyendo bases sólidas en frameworks modernos de JavaScript y principios de diseño.</p>
+                                <span class="text-secondary font-medium">2020</span>
+                            </div>
+                        </div>
+                        <div class="w-4 h-4 bg-secondary rounded-full border-4 border-background z-10 neon-glow-orange"></div>
+                        <div class="w-1/2 pl-8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="py-20 px-6 bg-surface/30">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Filosofía</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Los principios fundamentales detrás de "Iluminando Posibilidades Digitales" - donde la excelencia técnica se encuentra con la innovación creativa.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Technical Excellence -->
+                <div class="card text-center group hover-lift">
+                    <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-secondary to-accent rounded-2xl flex items-center justify-center neon-glow-orange group-hover:neon-glow-violet transition-all duration-300">
+                        <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 group-hover:text-secondary transition-colors duration-300">Excelencia Técnica</h3>
+                    <p class="text-text-secondary mb-6">Cada línea de código está elaborada con precisión. El rendimiento, la accesibilidad y la escalabilidad no son reflexiones posteriores—son principios fundamentales que guían cada decisión.</p>
+                    <div class="space-y-2 text-sm text-text-secondary">
+                        <div class="flex items-center justify-center space-x-2">
+                            <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                            <span>Código limpio y mantenible</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span>Optimización de rendimiento</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-2">
+                            <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                            <span>Cumplimiento de accesibilidad</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Creative Innovation -->
+                <div class="card text-center group hover-lift">
+                    <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-accent to-secondary rounded-2xl flex items-center justify-center neon-glow-violet group-hover:neon-glow-orange transition-all duration-300">
+                        <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 group-hover:text-secondary transition-colors duration-300">Innovación Creativa</h3>
+                    <p class="text-text-secondary mb-6">Empujar límites y explorar nuevas posibilidades. Cada proyecto es una oportunidad para crear algo extraordinario que no se ha hecho antes.</p>
+                    <div class="space-y-2 text-sm text-text-secondary">
+                        <div class="flex items-center justify-center space-x-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span>Experiencias web 3D</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-2">
+                            <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                            <span>Narración interactiva</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span>Interfaces inmersivas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Client Partnership -->
+                <div class="card text-center group hover-lift">
+                    <div class="w-20 h-20 mx-auto mb-6 bg-gradient-to-r from-secondary to-accent rounded-2xl flex items-center justify-center neon-glow-orange group-hover:neon-glow-violet transition-all duration-300">
+                        <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A2.996 2.996 0 0 0 17.06 7H16c-.8 0-1.54.37-2.01.99L12 10.5 10.01 7.99A2.996 2.996 0 0 0 8 7H6.94c-1.4 0-2.6.93-2.9 2.37L1.5 16H4v6h2v-6h1.5l1.1-3.3L10 15.5v6.5h2V15.5l1.4-2.8L14.5 16H16v6h4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-4 group-hover:text-secondary transition-colors duration-300">Asociación con Clientes</h3>
+                    <p class="text-text-secondary mb-6">La verdadera colaboración significa entender tu visión y traducirla en realidad digital. Cada proyecto es una asociación construida sobre confianza, comunicación y éxito compartido.</p>
+                    <div class="space-y-2 text-sm text-text-secondary">
+                        <div class="flex items-center justify-center space-x-2">
+                            <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                            <span>Enfoque colaborativo</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-2">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span>Comunicación transparente</span>
+                        </div>
+                        <div class="flex items-center justify-center space-x-2">
+                            <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                            <span>Resultados medibles</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workspace & Process -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Detrás de Escena</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Una mirada al espacio de trabajo, herramientas y proceso creativo que da vida a las visiones digitales.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Modern workspace with multiple monitors, 3D design software, and creative tools" class="w-full h-96 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-accent/20 to-transparent rounded-lg"></div>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="card hover-lift">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center">
+                            <svg class="w-6 h-6 text-secondary mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                            Configuración de Desarrollo
+                        </h3>
+                        <p class="text-text-secondary mb-4">Un entorno de desarrollo cuidadosamente seleccionado optimizado para desarrollo web 3D y programación creativa.</p>
+                        <div class="grid grid-cols-2 gap-4 text-sm">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                <span>VS Code + Extensions</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                <span>Blender for 3D Assets</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                <span>Figma for Design</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                <span>Chrome DevTools</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card hover-lift">
+                        <h3 class="text-xl font-semibold mb-4 flex items-center">
+                            <svg class="w-6 h-6 text-accent mr-3" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            Proceso Creativo
+                        </h3>
+                        <p class="text-text-secondary mb-4">Un enfoque estructurado pero flexible que equilibra la exploración creativa con la precisión técnica.</p>
+                        <div class="space-y-2 text-sm text-text-secondary">
+                            <div>1. Descubrimiento y Alineación de Visión</div>
+                            <div>2. Diseño Conceptual y Prototipado</div>
+                            <div>3. Creación y Optimización de Activos 3D</div>
+                            <div>4. Desarrollo Interactivo y Pruebas</div>
+                            <div>5. Optimización de Rendimiento y Lanzamiento</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Credentials -->
+    <section class="py-20 px-6 bg-surface/30">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Credenciales Profesionales</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Reconocimiento, certificaciones y contribuciones comunitarias que validan la experiencia y el compromiso con la excelencia.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Certification Badge 1 -->
+                <div class="card text-center group hover-lift">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-secondary to-accent rounded-full flex items-center justify-center neon-glow-orange group-hover:neon-glow-violet transition-all duration-300">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2">JavaScript Avanzado</h3>
+                    <p class="text-sm text-text-secondary">Experto Certificado</p>
+                </div>
+
+                <!-- Certification Badge 2 -->
+                <div class="card text-center group hover-lift">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-accent to-secondary rounded-full flex items-center justify-center neon-glow-violet group-hover:neon-glow-orange transition-all duration-300">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2">Desarrollo Web 3D</h3>
+                    <p class="text-sm text-text-secondary">Especialista Three.js</p>
+                </div>
+
+                <!-- Speaking Badge -->
+                <div class="card text-center group hover-lift">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-secondary to-accent rounded-full flex items-center justify-center neon-glow-orange group-hover:neon-glow-violet transition-all duration-300">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A2.996 2.996 0 0 0 17.06 7H16c-.8 0-1.54.37-2.01.99L12 10.5 10.01 7.99A2.996 2.996 0 0 0 8 7H6.94c-1.4 0-2.6.93-2.9 2.37L1.5 16H4v6h2v-6h1.5l1.1-3.3L10 15.5v6.5h2V15.5l1.4-2.8L14.5 16H16v6h4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2">Ponente de Conferencia</h3>
+                    <p class="text-sm text-text-secondary">WebGL Summit 2024</p>
+                </div>
+
+                <!-- Community Badge -->
+                <div class="card text-center group hover-lift">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-accent to-secondary rounded-full flex items-center justify-center neon-glow-violet group-hover:neon-glow-orange transition-all duration-300">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 11H7v6h2v-6zm4 0h-2v6h2v-6zm4 0h-2v6h2v-6zm2.5-9H19v2h-1.5v17.5c0 .83-.67 1.5-1.5 1.5H8c-.83 0-1.5-.67-1.5-1.5V4H5V2h3.5c0-.83.67-1.5 1.5-1.5h4c.83 0 1.5.67 1.5 1.5H18.5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2">Código Abierto</h3>
+                    <p class="text-sm text-text-secondary">Contribuidor Activo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Touch -->
+    <section class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Más Allá del Código</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    El lado humano del artesano digital - intereses, inspiraciones y lo que impulsa la pasión por crear experiencias extraordinarias.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Interest 1 -->
+                <div class="card text-center hover-lift">
+                    <img src="https://images.pixabay.com/photo/2016/11/29/06/15/plans-1867745_1280.jpg" alt="Architectural sketches and design inspiration" class="w-full h-48 object-cover rounded-lg mb-6" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <h3 class="text-xl font-semibold mb-3">Arquitectura y Diseño</h3>
+                    <p class="text-text-secondary">Extrayendo inspiración de principios arquitectónicos para crear espacios digitales que se sientan tanto funcionales como hermosos.</p>
+                </div>
+
+                <!-- Interest 2 -->
+                <div class="card text-center hover-lift">
+                    <img src="https://images.unsplash.com/photo-1446776877081-d282a0f896e2?q=80&w=2944&auto=format&fit=crop" alt="Mountain landscape photography showcasing natural beauty" class="w-full h-48 object-cover rounded-lg mb-6" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <h3 class="text-xl font-semibold mb-3">Fotografía de Naturaleza</h3>
+                    <p class="text-text-secondary">Capturar la belleza del mundo natural ayuda a informar paletas de colores y patrones de diseño orgánicos en el trabajo digital.</p>
+                </div>
+
+                <!-- Interest 3 -->
+                <div class="card text-center hover-lift">
+                    <img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Collection of books on technology, design, and philosophy" class="w-full h-48 object-cover rounded-lg mb-6" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                    <h3 class="text-xl font-semibold mb-3">Aprendizaje Continuo</h3>
+                    <p class="text-text-secondary">Siempre explorando nuevas tecnologías, filosofías de diseño y metodologías creativas para empujar los límites de lo que es posible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why I Do This -->
+    <section class="py-20 px-6 bg-surface/30">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Por Qué Hago Esto</h2>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    La motivación más profunda detrás del oficio - transformar posibilidades digitales en impacto significativo para clientes y usuarios.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="card hover-lift">
+                        <h3 class="text-2xl font-semibold mb-4 text-gradient">Motivación Personal</h3>
+                        <p class="text-text-secondary mb-4">
+                            Hay algo mágico en el momento cuando el código se transforma en arte, cuando la precisión técnica se encuentra con la visión creativa. Cada proyecto es una oportunidad para empujar límites y crear algo que no existía antes.
+                        </p>
+                        <p class="text-text-secondary">
+                            La web es nuestro lienzo, y la tecnología 3D es el pincel que nos permite pintar experiencias que antes eran imposibles. Esta intersección del arte y la tecnología es donde encuentro mi propósito.
+                        </p>
+                    </div>
+
+                    <div class="card hover-lift">
+                        <h3 class="text-2xl font-semibold mb-4 text-gradient">Impacto en Clientes</h3>
+                        <p class="text-text-secondary mb-4">
+                            Presenciar la transformación en los negocios de los clientes cuando ven su visión cobrar vida de maneras que nunca imaginaron posibles - eso es lo que me impulsa todos los días.
+                        </p>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                <span class="text-text-secondary">300% de aumento promedio en compromiso del usuario</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-accent rounded-full"></div>
+                                <span class="text-text-secondary">95% de tasa de satisfacción del cliente</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <div class="w-2 h-2 bg-secondary rounded-full"></div>
+                                <span class="text-text-secondary">50+ lanzamientos de proyectos exitosos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <!-- Client Testimonial -->
+                    <div class="card hover-lift">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop" alt="Michael Chen - CEO TechFlow" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div>
+                                <h4 class="font-semibold">Michael Chen</h4>
+                                <p class="text-sm text-text-secondary">CEO, TechFlow</p>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary italic">"La experiencia 3D creada para nuestro lanzamiento de producto no solo cumplió nuestras expectativas—redefinió lo que pensábamos que era posible para nuestra marca en línea."</p>
+                    </div>
+
+                    <!-- Client Testimonial -->
+                    <div class="card hover-lift">
+                        <div class="flex items-center mb-4">
+                            <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Sarah Rodriguez - Creative Director" class="w-12 h-12 rounded-full object-cover mr-4" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;" />
+                            <div>
+                                <h4 class="font-semibold">Sarah Rodriguez</h4>
+                                <p class="text-sm text-text-secondary">Creative Director, Pixel Studios</p>
+                            </div>
+                        </div>
+                        <p class="text-text-secondary italic">"Trabajar con un verdadero artesano digital significa obtener soluciones que son tanto técnicamente excelentes como creativamente inspiradoras. Los resultados hablan por sí mismos."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gradient">Inicia una Conversación</h2>
+            <p class="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
+                ¿Listo para explorar lo que es posible cuando la visión se encuentra con el código? Discutamos tus aspiraciones digitales y creemos algo extraordinario juntos.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <a href="contact_multi_touch_engagement_hub.html" class="btn-primary text-lg px-8 py-4">
+                    Creemos Juntos
+                </a>
+                <a href="portfolio_interactive_project_showcase.html" class="border border-secondary text-secondary hover:bg-secondary hover:text-primary px-8 py-4 rounded-lg transition-all duration-300 hover-lift neon-glow-orange">
+                    Ver Mi Trabajo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 border-t border-border">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <span class="text-2xl font-bold text-secondary neon-glow-orange">rxpana</span>
+                        <span class="ml-2 text-text-secondary">Portfolio</span>
+                    </div>
+                    <p class="text-text-secondary mb-6 max-w-md">
+                        Iluminando Posibilidades Digitales a través de experiencias web 3D de vanguardia y soluciones digitales premium.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-secondary transition-colors duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-secondary transition-colors duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-secondary transition-colors duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.347-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Navegación</h4>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li><a href="homepage_premium_digital_portfolio.html" class="hover:text-secondary transition-colors duration-300">Inicio</a></li>
+                        <li><a href="portfolio_interactive_project_showcase.html" class="hover:text-secondary transition-colors duration-300">Portafolio</a></li>
+                        <li><a href="about_digital_craftsperson_story.html" class="hover:text-secondary transition-colors duration-300">Sobre mí</a></li>
+                        <!-- <li><a href="lab_creative_experiments_hub.html" class="hover:text-secondary transition-colors duration-300">Laboratorio</a></li> -->
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors duration-300">Desarrollo Web</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors duration-300">Experiencias 3D</a></li>
+                        <li><a href="javascript:void(0)" class="hover:text-secondary transition-colors duration-300">Estrategia Digital</a></li>
+                        <li><a href="contact_multi_touch_engagement_hub.html" class="hover:text-secondary transition-colors duration-300">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-border mt-8 pt-8 text-center text-text-secondary">
+                <p>&copy; 2025 rxpana Portfolio. Todos los Derechos Reservados. Creado con pasión por la excelencia digital.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on links
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Floating navigation scroll effect
+        const floatingNav = document.getElementById('floating-nav');
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > 100) {
+                floatingNav.classList.add('bg-surface/95');
+                floatingNav.classList.add('shadow-neon-orange');
+            } else {
+                floatingNav.classList.remove('bg-surface/95');
+                floatingNav.classList.remove('shadow-neon-orange');
+            }
+            
+            lastScrollY = currentScrollY;
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animated skill bars on scroll
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const skillBars = entry.target.querySelectorAll('.skill-item');
+                    skillBars.forEach((bar, index) => {
+                        setTimeout(() => {
+                            const progressBar = bar.querySelector('div[style*="width"]');
+                            if (progressBar) {
+                                progressBar.style.transition = 'width 1s ease-out';
+                                progressBar.style.width = progressBar.style.width;
+                            }
+                        }, index * 200);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Observe skills sections
+        document.querySelectorAll('.card').forEach(card => {
+            if (card.querySelector('.skill-item')) {
+                observer.observe(card);
+            }
+        });
+
+        // Timeline item animations
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.3 });
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(20px)';
+            item.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            timelineObserver.observe(item);
+        });
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxElements = document.querySelectorAll('.absolute');
+            
+            parallaxElements.forEach((element, index) => {
+                const speed = (index + 1) * 0.1;
+                element.style.transform = `translateY(${scrolled * speed}px)`;
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
